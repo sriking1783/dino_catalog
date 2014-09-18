@@ -1,8 +1,6 @@
 require 'csv'
 require 'json'
 
-
-
 class Dinosaur
   attr_accessor :result_dinosaurs
   def initialize
@@ -19,7 +17,6 @@ class Dinosaur
     end
   end
 
-
   def get_name()
     dinosaur_names = []
     @result_dinosaurs.each do |dinosaur|
@@ -29,7 +26,6 @@ class Dinosaur
   end
 
   def search_dinosaur(options)
-
     @dinosaurs = @result_dinosaurs unless @result_dinosaurs.empty?
     @result_dinosaurs = []
     options.each do |key, val|
@@ -57,7 +53,6 @@ class Dinosaur
         end
       end
     end
-    #@result_dinosaurs
     self
   end
 
